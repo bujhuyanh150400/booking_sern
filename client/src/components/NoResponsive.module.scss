@@ -1,0 +1,38 @@
+@import "../styles/common.scss";
+@import "../styles/variables";
+@import "../styles/base";
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container{
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    @include flex-center;
+    animation: fade 1s;
+    z-index: 99999999;
+    position: fixed;
+    .body {
+      @include boxHolder;
+      width: 80%;
+      padding: 20px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+}

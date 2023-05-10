@@ -1,0 +1,114 @@
+@import "../../styles/common.scss";
+@import "../../styles/variables";
+@import "../../styles/base";
+
+// Body styles
+.container {
+  @include container_system;
+  .header {
+    @include header_system;
+  }
+  .body {
+    .form {
+      width: 100%;
+      @include flex-center;
+      flex-direction: column;
+      gap: 20px;
+      .form_header_holder {
+        width: 100%;
+        @include flex-between;
+        gap: 20px;
+        .avatar_holder {
+          @include flex-center();
+          width: 50%;
+          flex-direction: column;
+          gap: 30px;
+          .preview_avatarPreview {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ccc;
+            border-radius: 100%;
+            @include boxShadow;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .label_avatarPreview {
+            @include btn(
+              $color: #fff,
+              $bg: $menu_choose-bg,
+              $bg_hover: $menu_active-bg,
+              $color_hover: $color_sub,
+              $border: none,
+              $border_hover: none
+            );
+            padding: 6px 12px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            cursor: pointer;
+            > svg {
+              font-size: 20px;
+            }
+          }
+        }
+        .alert_card {
+          @include boxHolder;
+          width: 50%;
+          .alert_holder {
+            .alert_title {
+              font-size: $h3;
+              font-weight: 700;
+              line-height: 22px;
+            }
+            .alert {
+              line-height: 22px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .form_input {
+        @include flex-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        .form_controller {
+          flex: 1 1 40%;
+        }
+      }
+    }.save_holder {
+      margin-top: 30px;
+      width: 100%;
+      @include flex-end();
+      .save {
+        @include btn(
+          $color: #fff,
+          $bg: $menu_choose-bg,
+          $bg_hover: $menu_active-bg,
+          $color_hover: $color_sub,
+          $border: none,
+          $border_hover: none
+        );
+        padding: 6px 12px;
+        @include boxShadow;
+      }
+      .save_unactive {
+        @include btn(
+          $color: #fff,
+          $bg: #ef4444,
+          $bg_hover: #ef4444,
+          $color_hover: #fff,
+          $border: none,
+          $border_hover: none
+        );
+        padding: 6px 12px;
+        cursor: not-allowed;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,93 @@
+@import "../../../styles/common.scss";
+@import "../../../styles/variables";
+@import "../../../styles/base";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  @include container_system;
+  .header {
+    @include header_system;
+  }
+  .body {
+    .doctor_info {
+      @include boxHolder;
+      animation: fadeIn 0.5s;
+      padding: 20px;
+      .doctor_category {
+        @include flex-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        .doctor_price,
+        .doctor_payment,
+        .doctor_province,
+        .doctor_name_clinic,
+        .doctor_location,
+        .doctor_clinic,
+        .doctor_specialties {
+          flex: 1 1 30%;
+        }
+        .doctor_note {
+          flex: 1 1 50%;
+
+        }
+      }
+
+      .desc_doctor {
+        width: 100%;
+        margin-top: 20px;
+        .desc_doctor_title {
+          @include title_system;
+        }
+      }
+      .intro_doctor {
+        width: 100%;
+        margin-top: 20px;
+        .intro_doctor_title {
+          @include title_system;
+        }
+      }
+      .submit {
+        margin-top: 20px;
+        .submit_btn {
+          @include btn(
+            $color: #fff,
+            $bg: $menu_choose-bg,
+            $bg_hover: $menu_active-bg,
+            $color_hover: $color_sub,
+            $border: none,
+            $border_hover: none
+          );
+          padding: 6px 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          user-select: none;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .submit_btn_unsave {
+          @include btn(
+            $color: #fff,
+            $bg: #ef4444,
+            $bg_hover: #ef4444,
+            $color_hover: #fff,
+            $border: none,
+            $border_hover: none
+          );
+          padding: 6px 12px;
+          cursor: not-allowed;
+          -webkit-user-select: none;
+          user-select: none;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+    }
+  }
+}

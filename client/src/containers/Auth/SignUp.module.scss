@@ -1,0 +1,137 @@
+@import "../../styles/variables";
+@import "../../styles/common.scss";
+@import "../../styles/base";
+
+.background {
+  position: relative;
+  background-color: #dde3ec;
+  width: 100vw;
+  height: 100vh;
+  .body {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    background: #fff;
+    border-radius: 12px;
+    .content {
+      position: relative;
+      @include flex-center;
+      flex-direction: column;
+      padding: 30px;
+      padding-top: 70px;
+      width: 100%;
+      height: 100%;
+      .avatar_holder {
+        position: absolute;
+        top: -90px;
+        background-color: #fff;
+        border-radius: 100%;
+        .preview_avatarPreview {
+          width: 150px;
+          height: 150px;
+          border: 1px solid #ccc;
+          border-radius: 100%;
+          @include boxShadow;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      .btn_avatarPreview {
+        @include btn(
+          $color: #fff,
+          $bg: $menu_choose-bg,
+          $bg_hover: $menu_active-bg,
+          $color_hover: $color_sub,
+          $border: none,
+          $border_hover: none
+        );
+        padding: 6px 12px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+        > svg {
+          font-size: 20px;
+        }
+      }
+      .title_signup {
+        color: #292929;
+        font-size: $title;
+        font-weight: 700;
+        line-height: $title;
+        margin: 20px 0;
+      }
+      .form_input {
+        @include flex-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        .form_controller {
+          flex: 1 1 40%;
+        }
+      }
+      .save_holder {
+        margin-top: 30px;
+        width: 100%;
+        @include flex-center;
+        flex-direction: column;
+        gap: 20px;
+        .save {
+          @include btn(
+            $bg: $color_second,
+            $bg_hover: transparent,
+            $color: #fff,
+            $color_hover: $color_second,
+            $border: 1px solid $color_second,
+            $border_hover: 1px solid $color_second,
+            $padding: 10px 30px
+          );
+        }
+        .or_login {
+          font-weight: 300;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+          .login_btn {
+            background: transparent;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            padding: 0;
+            color: $color_second;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+        .terms {
+          font-weight: 300;
+          > button {
+            background: transparent;
+            border: none;
+            outline: none;
+            font-weight: 300;
+            padding: 0;
+            opacity: 0.6;
+            &:hover {
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.btn_go_to_login{
+  @include btn(
+    $bg: $color_second,
+    $bg_hover: transparent,
+    $color: #fff,
+    $color_hover: $color_second,
+    $border: 1px solid $color_second,
+    $border_hover: 1px solid $color_second,
+  );
+}

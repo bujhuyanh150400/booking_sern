@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+// fontsize
+$fontmain: "Roboto", sans-serif;
+// xl
+$base-size: 14px;
+$title: 30px;
+$h1: 24px;
+$h2: 20px;
+$h3: 16px;
+// sm
+$base-size-sm: 12px;
+$title: 26px;
+$h1-sm: 20px;
+$h2-sm: 18px;
+$h3-sm: 14px;
+// Z-index
+$z_arrow: 8;
+$z_menu_setting: 8;
+$z_menu: 9;
+$z_modal: 2000;
+$z_loading: 99999;
+// Color
+$color_main: #49bce2;
+$color_sub: #0f2650;
+$color_background: rgba(0, 128, 255, 0.6);
+$color_second: #0074d9;
+$color_border: #93c4e4;
+$color_footer: #a9b3bb;
+$background_section: #f6f6f6;
+
+// Color for administration
+$ad_bg: #1e293b;
+$ad_menu: #334155;
+$menu_choose-bg: #475569;
+$menu_choose-bg-sub: #64748b;
+$menu_choose-bg-sub-sub: #94a3b8;
+$menu_active-bg: #cbd5e1;
+$table_row: #e5e5e5;
+
+$common-text-color: #fff;
+$common-btn-confirm: #2689de;
+$common-btn-deny: #bb8d09;
+$common-error: #ff9600;
+$common-notify: greenyellow;
+$common-green: #00c087;
+$common-red: #d01a1d;
+$common-white: #fff;
+$common-orange: #ffac42;
+$border: #ccc;
+$text-in-light: #181818;
+
+$input-focus: #ffac42;
+
+$footer-container: #f5f5f5;
+$footer-text: #262626;
+$footer-next-disable: #ccc;
+
+$bg-menu-color: #f5f5f5;
+$bg-scrollbar: #000;
+$bg-table-color: #f5f5f5;
+$box-shadow-color: #0000004d;
+
+$dropdown-image: url("../assets/images/dropdown.svg");
+
+//date picker
+$date-picker-bg: $common-white;
+$date-picker-border: darken(#3f4458, 50%);
+$date-picker-arrow-hover: $common-orange;
+$date-picker-month-fg: #000;
+$date-picker-month-bg: $common-white;
+$date-picker-weekdays-fg: #000;
+$date-picker-weekdays-bg: transparent;
+$date-picker-day-fg: #000;
+$date-picker-day-hover-bg: darken($common-white, 25%);
+$date-picker-today-border: $common-orange;
+$date-picker-today-bg: $common-orange;
+$date-picker-today-fg: #000;
+$date-picker-day-selected-fg: $common-white;
+
+// Tooltip
+$tooltip-max-width: 400px;
+$tooltip-margin: 8px;
+$tooltip-arrow-width: 10px;
+$tooltip-arrow-height: 10px;
+$tooltip-arrow-color: #000;

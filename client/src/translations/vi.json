@@ -1,0 +1,356 @@
+{
+    "homePage": {
+        "navbar": {
+            "language": "Ngôn ngữ",
+            "login": "Đăng nhập",
+            "signup": "Đăng kí",
+            "home": "Trang chủ",
+            "logout": "Đăng xuất",
+            "setting": "Cài đặt",
+            "Checkuppackage": "Gói khám",
+            "Healthfacilities": "Cơ sở y tế",
+            "Doctor": "Bác sĩ",
+            "Specialist": "Chuyên khoa",
+            "Handbook": "Cẩm nang",
+            "welcome": "Chào mừng, "
+        },
+        "body": {
+            "searching": {
+                "title-first": "NỀN TẢNG Y TẾ",
+                "title-second": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+                "booking": "Đặt lịch ngay"
+            },
+            "category": {
+                "Specializedexamination": "Khám chuyên khoa",
+                "Remoteexamination": "Khám từ xa",
+                "Generalexamination": "Khám tổng quát",
+                "Dentalexamination": "Khám nha khoa",
+                "Mentalhealth": "Sức khỏe tinh thần",
+                "Surgerypack": "Gói phẫu thuật"
+            },
+            "specialties": {
+                "title": "Chuyên khoa",
+                "detail": "Xem chi tiết",
+                "param1": "Đầy đủ các chuyên khoa, thông tin bác sĩ chi tiết, các bài hướng dẫn dễ hiểu, người bệnh dễ dàng lựa chọn bác sĩ phù hợp.",
+                "param2": " Chúng tôi hỗ trợ bệnh nhân trong suốt quá trình trước khám, trong khi đi khám và sau khi đi khám một cách hiệu quả.",
+                "booking": "Đặt lịch ngay",
+                "no_doctor": "Hiện không có bác sĩ nào trong khu vực này"
+            },
+            "location": {
+                "title": "Cơ sở y tế"
+            },
+            "doctor": {
+                "title": "Bác sĩ nổi bật",
+                "detail-doctor": {
+                    "calendar": "Lịch khám bệnh",
+                    "no-time": "Không có thời gian khám bệnh ngày hôm nay, vui lòng chọn ngày khác",
+                    "free": "Chọn và đặt (Phí đặt lịch 0đ)",
+                    "info-cinic": "Thông tin phòng khám",
+                    "City": "Tỉnh/thành: ",
+                    "location": "Địa chỉ: ",
+                    "name_location": "Tên phòng khám: ",
+                    "see": "Xem chi tiết",
+                    "not_see": "Ẩn chi tiết",
+                    "price": "Giá khám: ",
+                    "payment": "Hình thức thanh toán: ",
+                    "note": "Ghi chú của bác sĩ: ",
+                    "free_title": "Miễn phí đặt lịch khám bệnh",
+                    "datetime": "Lịch khám bệnh: "
+                },
+                "modal_booking": {
+                    "title": "Đặt lịch hẹn khám bệnh",
+                    "info_title": "Thông tin phòng khám",
+                    "name_clinic": "Tên phòng khám: ",
+                    "location_clinic": "Địa chỉ khám bệnh: ",
+                    "price": "Giá khám: ",
+                    "name": "Họ tên bệnh nhân",
+                    "name-alert": "Hãy ghi rõ Họ Và Tên, viết hoa những chữ cái đầu tiên",
+                    "gender": "Giới tính",
+                    "gender-alert": "Bạn phải chọn giới tính",
+                    "phonenumber": "Số điện thoại",
+                    "phonenumber-alert": "Bạn phải nhập số điện thoại và đúng kiểu số điện thoại",
+                    "email": "Email",
+                    "birthday": "Ngày sinh",
+                    "birthday-alert": "Bạn phải nhập ngày sinh",
+                    "email-alert": "Bạn phải nhập đúng cú pháp Email và không bỏ trống",
+                    "location": "Địa chỉ",
+                    "location-alert": "Bạn phải nhập địa chỉ",
+                    "booking_p": "Phí đặt lịch: ",
+                    "booking_num": "Miễn phí",
+                    "total_p": "Tổng cộng",
+                    "reason": "Lý do khám bệnh",
+                    "note_holder": "Quý khách vui lòng điền đầy đủ thông tin để tiết kiệm thời gian làm thủ tục khám",
+                    "attentive": "Lưu ý",
+                    "attentive_p": "Thông tin anh/chị cung cấp sẽ được sử dụng làm hồ sơ khám bệnh, khi điền thông tin anh/chị vui lòng:",
+                    "attentive_li1": "Ghi rõ họ và tên, viết hoa những chữ cái đầu tiên, ví dụ: Trần Văn Phú",
+                    "attentive_li2": "Điền đầy đủ, đúng và vui lòng kiểm tra lại thông tin trước khi ấn \"Đăng kí lịch khám\"",
+                    "submit": "Đăng kí lịch khám",
+                    "cancel": "Hủy",
+                    "Notify": "Bạn đã đăng kí lịch khám thành công, hãy xác nhận thông qua email của bạn",
+                    "Notify_err": "Đã xảy ra lỗi Server, vui lòng thử lại sau"
+                }
+            },
+            "about": {
+                "title": "Giới thiệu",
+                "about": "Truyền thông nói về BookingCare",
+                "1": "BookingCare là nền tảng đặt lịch khám giúp bệnh nhân dễ dàng lựa chọn đúng bác sĩ từ mạng lưới bác sĩ chuyên khoa giỏi, với thông tin đã xác thực và đặt lịch nhanh chóng.",
+                "2": "1. Đội ngũ của BookingCare làm việc trực tiếp với các bác sĩ để xác thực các thông tin một cách chính xác, rõ ràng, cập nhật về chuyên khoa, quá trình huấn luyện - đào tạo, kinh nghiệm công tác.",
+                "3": "2. Cung cấp nội dung hướng dẫn giúp bệnh nhân dễ dàng lựa chọn bác sĩ phù hợp với vấn đề của mình để đi khám đạt hiệu quả cao.",
+                "4": "3. Hệ thống gợi ý danh sách bác sĩ phù hợp để bệnh nhân lựa chọn dựa trên dấu hiệu, triệu chứng hoặc lý do đi khám.",
+                "5": " 4. Hệ thống sẽ cập nhật những ý kiến phản hồi của bệnh nhân đã đi khám với từng bác sĩ để bệnh nhân có thêm thông tin tham khảo, lựa chọn bác sĩ phù hợp.",
+                "6": "Chúng tôi đang nghiên cứu, từng bước ứng dụng trí tuệ nhân tạo/dữ liệu lớn (AI/Big Data) để kết nối bệnh nhân đến đúng với bác sĩ phù hợp với tình trạng của mình."
+            },
+            "verify": {
+                "title": "Xác nhận lịch hẹn thành công",
+                "title_false": "Lịch hẹn này bạn đã xác nhận, vui lòng thử lại",
+                "param": "Xin cảm ơn quý khách đã đặt lịch hẹn từ phía chúng tôi",
+                "param_false": "Vui lòng hãy đặt lại lịch khám",
+                "param_2": "Hãy đến bệnh viện theo lịch trình giờ hẹn đã đặt",
+                "param_3": "Xin chân thành cảm ơn quý khách"
+            }
+        },
+        "footer": {
+            "company": "Công ty Cổ phần Công nghệ BookingCare",
+            "location": "Tầng 6, Tòa nhà D'Office, tổ 28, P. Dịch Vọng, Q. Cầu Giấy, Tp.Hà Nội",
+            "checker": "ĐKKD số: 1851171909. Sở KHĐT Hà Nội cấp ngày 30/2/2023",
+            "about": "Giới thiệu",
+            "contact": "Liên hệ",
+            "security": "Bảo mật",
+            "contract": "Điều khoản sử dụng",
+            "hanoi": "Trụ sở tại Hà Nội",
+            "hcm": "Văn phòng TP Hồ Chí Minh",
+            "location_hcm": "Số 01, Hồ Bá Kiện, Phường 15, Quận 10"
+        }
+    },
+    "login": {
+        "login": "Đăng nhập",
+        "p1": "Chào mừng quay trở lại, vui lòng ",
+        "p2": "Vào tài khoản của bạn",
+        "username": "Tên đăng nhập",
+        "username_err": "Vui lòng nhập Email và nhập đúng cú pháp",
+        "password": "Mật khẩu",
+        "password_err": "Vui lòng nhập mật khẩu và mật khẩu dài hơn 6 kí tự",
+        "signup": "Đăng kí"
+    },
+    "signup": {
+        "success_title": "Tạo tài khoản thành công",
+        "success_body": "Bạn đã đăng kí tài khoản thành công, vui lòng đăng nhập để tiếp tục sử dụng",
+        "email_err": "Vui lòng nhập Email và nhập đúng cú pháp",
+        "title": "Đăng kí tài khoản tại Bookingcare"
+    },
+    "menu": {
+        "Admin_role": {
+            "manager-user": {
+                "title": "Tài khoản",
+                "doctor": "Thông tin chi tiết Bác sĩ",
+                "admin": "Admin",
+                "user": "Người dùng",
+                "crud_user": "CRUD Redux"
+            },
+            "manager-clinic": {
+                "title": "Phòng khám",
+                "clinics": "Quản lý phòng khám",
+                "image": "Ảnh phòng khám",
+                "image_upload": "Tải ảnh lên",
+                "name": "Tên phòng khám",
+                "province": "Tỉnh/ Thành",
+                "location": "Địa chỉ",
+                "detail": "Chi tiết",
+                "edit_delete": "Sửa và xóa",
+                "form": "Điền thông tin",
+                "add": "Thêm phòng khám",
+                "save": "Lưu phòng khám",
+                "cancel": "Hủy",
+                "delete": "Xóa phòng khám thành công",
+                "save_success": "Lưu phòng khám thành công",
+                "save_error": "Lưu phòng khám thất bại"
+            },
+            "manager-specialty": {
+                "title": "Chuyên khoa",
+                "specialtys": "Quản lý chuyên khoa",
+                "image": "Ảnh chuyên khoa",
+                "image_upload": "Tải ảnh lên",
+                "name": "Tên chuyên khoa",
+                "detail": "Chi tiết",
+                "edit_delete": "Sửa và xóa",
+                "form": "Điền thông tin",
+                "add": "Thêm chuyên khoa",
+                "save": "Lưu chuyên khoa",
+                "cancel": "Hủy",
+                "delete": "Xóa chuyên khoa thành công",
+                "save_success": "Lưu chuyên khoa thành công",
+                "save_error": "Lưu chuyên khoa thất bại"
+            }
+        },
+        "Doctor_role": {
+            "manager-info": {
+                "title": "Quản lý thông tin",
+                "edit_user": "Quản lý thông tin cá nhân",
+                "edit_info": "Quản lý thông tin chi tiết"
+            },
+            "manager-schedule": {
+                "title": "Quản lý khám bệnh",
+                "schedule": "Đặt lịch khám"
+            },
+            "manager-patient": {
+                "title": "Quản lý lịch đặt hẹn của bệnh nhân",
+                "patient": "Quản lý lịch hẹn",
+                "history": "Lịch khám đã hoàn thành"
+            }
+        },
+        "Patient_role": {
+            "manager-info": {
+                "title": "Quản lý thông tin",
+                "edit_user": "Quản lý thông tin cá nhân"
+            },
+            "manager-booking": {
+                "title": "Quản lý lịch khám bệnh",
+                "booking": "Quản lý lịch khám bệnh"
+            }
+        }
+    },
+    "manager-user": {
+        "title": "Quản lý tài khoản",
+        "success": "Lưu người dùng thành công",
+        "delete_title": "Xóa người dùng",
+        "delete_body": "Bạn có chắc muốn xóa người dùng này ?",
+        "delete_success": "Xóa người dùng thành công",
+        "delete_failed": "Xóa người dùng thất bại",
+        "validate": "Các yêu cầu nhập thông tin",
+        "add": "Thêm người dùng",
+        "email": "Email",
+        "alert_email": "Phải đúng cú pháp Email và không bỏ trống",
+        "password": "Mật khẩu",
+        "alert_password": "Mật khẩu phải trên 6 kí tự và không bỏ trống",
+        "fullname": "Họ và tên",
+        "phonenumber": "Số điện thoại",
+        "alert_phonenumber": "Đúng định dạng điện thoại và không được để trống",
+        "address": "Địa chỉ",
+        "gender": "Giới tính",
+        "roleId": "Vai trò",
+        "positionId": "Chức vụ",
+        "image": "Ảnh đại diện",
+        "alert": "Bạn phải điền vào ô trống",
+        "save": "Lưu người dùng",
+        "tooltip": "Hãy điền đúng theo yêu cầu"
+    },
+    "manager-doctor": {
+        "header-title": "Tạo thông tin chi tiết cho Bác sĩ",
+        "select-doctor": "Chọn bác sĩ",
+        "description": "Miêu tả",
+        "introduce": "Thông tin giới thiệu",
+        "create": "Tạo thông tin",
+        "save": "Lưu thông tin người dùng",
+        "price": "Giá khám bệnh (VNĐ)",
+        "payment": "Phương thức thanh toán",
+        "province": "Tỉnh thành",
+        "specialty": "Chọn chuyên khoa",
+        "clinic": "Chọn phòng khám",
+        "name_clinic": "Tên phòng khám",
+        "location": "Địa chỉ phòng khám",
+        "note": "Ghi chú"
+    },
+    "manager-schedule": {
+        "title": "Quản lý kế hoạch khám bệnh của Bác sĩ",
+        "select-doctor": "Chọn bác sĩ",
+        "select-day": "Chọn ngày khám",
+        "select-time": "Chọn giờ khám",
+        "save": "Lưu thông tin"
+    },
+    "form": {
+        "title": "Điền thông tin",
+        "email": "Email",
+        "email_err": "Vui lòng nhập Email và nhập đúng cú pháp",
+        "password": "Mật khẩu",
+        "password_err": "Vui lòng nhập mật khẩu và mật khẩu dài hơn 6 kí tự",
+        "fullname": "Họ và tên",
+        "fullname_err": "Vui lòng nhập họ và tên",
+        "address": "Địa chỉ",
+        "address_err": "Vui lòng nhập địa chỉ",
+        "phonenumber": "Số điện thoại",
+        "phonenumber_err": "Vui lòng nhập SĐT và đúng cú pháp SĐT",
+        "gender": "Giới tính",
+        "gender_err": "Vui lòng chọn giới tính",
+        "position": "Vị trí",
+        "position_err": "Vui lòng chọn vị trí",
+        "roleId": "Vai trò",
+        "roleId_err": "Vui lòng chọn vai trò",
+        "signup": "Đăng kí",
+        "have_account": "Bạn đã có tài khoản ?",
+        "login": "Đăng nhập",
+        "term_p": "Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với",
+        "term_button": "Điều khoản sử dụng",
+        "term_p2": "Của chúng tôi",
+        "action": "Tác vụ"
+    },
+    "Clinic": {
+        "Data": {
+            "title": "Cơ sở y tế",
+            "p1": " BookingCare là Nền tảng Y tế chăm sóc sức khỏe toàn diện hàng đầu Việt Nam kết nối người dùng với trên 200 bệnh viện - phòng khám uy tín, hơn 1, 500 bác sĩ chuyên khoa giỏi và hàng nghìn dịch vụ, sản phẩm y tế chất lượng cao."
+        },
+        "Detail": {
+            "tab1": "Giới thiệu",
+            "tab2": "Đội ngũ bác sĩ",
+            "guide1": "BookingCare là Nền tảng Y tế chăm sóc sức khỏe toàn diện hàng đầu Việt Nam kết nối người dùng với trên 200 bệnh viện - phòng khám uy tín, hơn 1,500 bác sĩ chuyên khoa giỏi và hàng nghìn dịch vụ, sản phẩm y tế chất lượng cao.",
+            "guide2": "Từ nay, người bệnh có thể đặt lịch tại Khu khám bệnh theo yêu cầu, ",
+            "guide2_2": " thông qua hệ thống đặt khám BookingCare.",
+            "li1": "Được lựa chọn các giáo sư, tiến sĩ, bác sĩ chuyên khoa giàu kinh nghiệm",
+            "li2": " Hỗ trợ đặt khám trực tuyến trước khi đi khám (miễn phí đặt lịch)",
+            "li3": " Giảm thời gian chờ đợi khi làm thủ tục khám và ưu tiên khám trước",
+            "li4": " Nhận được hướng dẫn chi tiết sau khi đặt lịch"
+        }
+    },
+    "Doctor": {
+        "Data": {
+            "title": "Tại sao Bác sĩ của BookingCare lại giải quyết được vấn đề của bạn?",
+            "card1_title": "BÁC SĨ UY TÍN",
+            "card1_p": "Mạng lưới bác sĩ chuyên khoa giỏi đã/đang công tác tại các viện lớn hàng đầu, với thông tin đã xác thực.",
+            "card2_title": "ĐÚNG NGƯỜI ĐÚNG BỆNH",
+            "card2_p": "Đầy đủ các chuyên khoa, thông tin bác sĩ chi tiết, các bài hướng dẫn dễ hiểu, người bệnh dễ dàng lựa chọn bác sĩ phù hợp.",
+            "card3_title": "HỖ TRỢ CHU ĐÁO",
+            "card3_p": "Chúng tôi hỗ trợ bệnh nhân trong suốt quá trình trước khám, trong khi đi khám và sau khi đi khám một cách hiệu quả.",
+            "card4_title": "ĐẶT LỊCH 24/7",
+            "card4_p": "Lịch khám của bác sĩ hiển thị 24/7 giúp bạn chủ động lựa chọn lịch khám phù hợp.",
+            "card5_title": "MIỄN PHÍ ĐẶT LỊCH",
+            "card5_p": "Đặt khám qua BookingCare là miễn phí đặt lịch. Chi phí khám chữa bệnh, bạn thanh toán trực tiếp tại nơi khám.",
+            "card6_title": "KHÁM LẠI MIỄN PHÍ",
+            "card6_p": "Nếu người bệnh không hài lòng với qui trình khám, tư vấn và phương án điều trị của bác sĩ."
+        },
+        "infoDoctor": {
+            "title": "THÔNG TIN CHI TIẾT CỦA BÁC SĨ",
+            "save_success": "Lưu thông tin thành công",
+            "save_error": "Lưu thông tin thất bại"
+        },
+        "ManagerHistoryBooking": {
+            "title": "Lịch sử các lịch đặt hẹn",
+            "all": "Hiển thị tất cả",
+            "confirm_title": "Gửi xác nhận đơn khám bệnh",
+            "info_title": "Thông tin bệnh nhân",
+            "note": "Ghi chú của bác sĩ: ",
+            "image": "Ảnh đơn thuốc"
+        }
+    },
+    "table": {
+        "date": "Ngày khám",
+        "time": "Giờ khám",
+        "name": "Tên bệnh nhân",
+        "address": "Địa chỉ",
+        "phonenumber": "Số điện thoại",
+        "email": "Email",
+        "gender": "Giới tính",
+        "reason": "Lý do khám bệnh",
+        "action": "Tác vụ",
+        "confirm": "Xác nhận",
+        "status": "Tình trạng"
+    },
+    "LadingSystem": {
+        "title": "Chào mừng quay trở lại, ",
+        "p1": "Đây là trang quản lý cá nhân của bạn"
+    },
+    "seemore": "Xem thêm",
+    "close": "Đóng",
+    "Agree": "Đồng ý",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "nores": "Xin lỗi quý khách, trang web chưa hỗ trợ cho tablet và thiết bị di động"
+}

@@ -1,0 +1,99 @@
+@import "../../styles/variables";
+@import "../../styles/base";
+
+.body {
+  display: flex;
+  @include bodyPageDetail();
+  .left {
+    width: 8%;
+  }
+  .right {
+    width: 92%;
+    .container {
+      @include flex-start-column;
+      .detail_specialty {
+        width: 100%;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        .detail_specialty_contanier {
+          background-image: linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 1)
+          );
+          padding: 10px 0;
+          .detail_specialty_content {
+            @include PaddingPageDetail();
+            > h1 {
+              font-size: $h1;
+              line-height: $h1;
+              font-weight: 700;
+              margin: 20px 30px;
+              @include titleBody;
+              color: $color_main;
+            }
+            > h2 {
+              font-size: $h2;
+              line-height: 24px;
+              font-weight: 700;
+              @include titleBody;
+              margin: 10px;
+            }
+            > p {
+              line-height: 24px;
+              font-weight: 500;
+              margin: 10px;
+            }
+            > ul {
+              list-style: inside;
+              > li {
+                line-height: 24px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .select_holder {
+        margin: 20px 183px 30px 183px;
+        width: 20%;
+      }
+      .detail_doctorArr {
+        @include PaddingPageDetail();
+        @include flex-start-column;
+        gap: 20px;
+        margin-bottom: 50px;
+        .detail_doctor_box {
+          width: 100%;
+          @include flex-start;
+          align-items: flex-start;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #ccc;
+          gap: 20px;
+          .left_holder {
+            width: 50%;
+          }
+          .right_holder {
+            width: 50%;
+            @include flex-start-column;
+            gap: 20px;
+            .up_holder {
+              width: 100%;
+              height: 50%;
+            }
+            .down_holder {
+              width: 100%;
+              height: 50%;
+            }
+          }
+        }
+        .no_doctor {
+          @include boxHolder;
+          padding: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

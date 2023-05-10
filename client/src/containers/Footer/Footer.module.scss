@@ -1,0 +1,104 @@
+@import "../../styles/variables";
+@import "../../styles/base";
+
+// ----- FOOTER ------ //
+.footer {
+    padding: 68px 0 40px;
+    background: $ad_menu;
+    .footer_container {
+      margin: 0 80px;
+      .footer_content {
+        @include flex-between;
+        .footer_left {
+          .footer_logo {
+            > img {
+              height: 18px;
+              width: auto;
+            }
+            padding-bottom: 10px;
+          }
+          .footer_contact {
+            .footer_name_company {
+              font-size: 16px;
+              font-weight: 600;
+              color: $color_footer;
+              line-height: 22px;
+              margin-bottom: 10px;
+            }
+            .location_checker {
+              color: $color_footer;
+              line-height: 22px;
+              margin-bottom: 10px;
+              > span {
+                padding-right: 10px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .footer_right {
+          @include flex-between;
+          align-items: flex-start;
+          gap: 20px;
+          .footer_navigator {
+            .footer_navigator_li {
+              line-height: 22px;
+              margin-bottom: 8px;
+              color: $color_footer;
+              cursor: pointer;
+              transition: all 0.2s ease;
+              &:hover {
+                color: $color_main;
+              }
+            }
+          }
+          .footer_location {
+            .footer_location_box {
+              > h1 {
+                color: $color_footer;
+                font-weight: 700;
+                line-height: 22px;
+                margin-top: 10px;
+                text-transform: uppercase;
+              }
+              > p {
+                line-height: 22px;
+                margin-bottom: 8px;
+                color: $color_footer;
+              }
+            }
+          }
+        }
+      }
+      .footer_copyright {
+        border-top: 1px solid $color_footer;
+        margin-top: 40px;
+        padding: 20px 0;
+        @include flex-between();
+        .copyright_content {
+          color: $color_footer;
+        }
+        .copyright_social {
+          @include flex-center();
+          gap: 10px;
+          .copyright_facebook,
+          .copyright_youtube {
+            font-size: 30px;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              opacity: 1;
+            }
+          }
+          .copyright_facebook {
+            color: #0e8cf1;
+          }
+          .copyright_youtube {
+            color: #ff0000;
+          }
+        }
+      }
+    }
+  }
+  

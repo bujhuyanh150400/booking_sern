@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+@import "../../styles/base";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.body {
+  .all_schedule {
+ 
+    .schedule_select_form{
+      width: 40%;
+      .schedule_select{
+
+      }
+    }
+  }
+  .all_available_time {
+    margin-top: 10px;
+    .text_calendar {
+      margin-bottom: 10px;
+      .span_calendar {
+        @include flex-start;
+        gap: 6px;
+        line-height: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+    .avalable_time {
+      @include flex-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      .avalable_time_btn {
+        flex: 1 1 20%;
+        animation: fadeIn 0.2s;
+        @include btn(
+          $color: #fff,
+          $bg: $color_second,
+          $bg_hover: $color_main,
+          $color_hover: #fff,
+          $border: none,
+          $border_hover: none
+        );
+      }
+      .no_time {
+        animation: fadeIn 0.2s;
+        line-height: 22px;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+    }
+    .free {
+      margin-top: 15px;
+      @include flex-start();
+      gap: 5px;
+    }
+  }
+}

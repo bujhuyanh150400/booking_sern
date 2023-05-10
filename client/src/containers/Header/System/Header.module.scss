@@ -1,0 +1,62 @@
+@import "../../../styles/common.scss";
+@import "../../../styles/variables";
+@import "../../../styles/base";
+
+// menuslider
+.drawer {
+  .drawer_header {
+    height: 66px;
+    .drawer_button {
+      color: #fff;
+    }
+  }
+  .drawer_body {
+    padding: 0;
+  }
+}
+// Header
+.navbar {
+  height: 66px;
+  background: $ad_bg !important;
+  position: fixed;
+  .navbar_container {
+    @include flex-between;
+    width: 100%;
+    height: 100%;
+    .navbar_left {
+      @include flex-between;
+      gap: 10px;
+      .menu_btn {
+        color: #fff;
+        transition: all 0.2s ease;
+        &:hover {
+          transform: scale(1.2, 1.2);
+        }
+      }
+      .logo {
+        color: #fff;
+        font-size: $title;
+        font-weight: 700;
+        > span {
+          font-size: $title;
+          color: $color_main;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .navbar_right {
+    @include flex-center();
+    gap: 10px;
+    .btn_setting {
+      @include btn(
+        $bg: #fff,
+        $bg_hover: #fff,
+        $color: $color_sub,
+        $color_hover: $color_sub,
+        $border: 1px solid $color_border,
+        $border_hover: 1px solid $color_border
+      );
+    }
+  }
+}

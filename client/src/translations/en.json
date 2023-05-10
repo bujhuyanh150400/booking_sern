@@ -1,0 +1,357 @@
+{
+    "homePage": {
+        "navbar": {
+            "language": "Language",
+            "login": "Login",
+            "signup": "Sign up",
+            "logout": "Log out",
+            "setting": "Setting",
+            "home": "Home",
+            "Checkuppackage": "Checkup package",
+            "Healthfacilities": "Health facilities",
+            "Doctor": "Doctor",
+            "Specialist": "Specialist",
+            "Handbook": "Handbook",
+            "welcome": "Welcome, "
+        },
+        "body": {
+            "searching": {
+                "title-first": "MEDICAL BACKGROUND",
+                "title-second": "COMPREHENSIVE HEALTH CARE",
+                "booking": "Booking now"
+            },
+            "category": {
+                "Specializedexamination": "Specialized examination",
+                "Remoteexamination": "Remote examination",
+                "Generalexamination": "General examination",
+                "Dentalexamination": "Dental examination",
+                "Mentalhealth": "Mental health",
+                "Surgerypack": "Surgery pack"
+            },
+            "specialties": {
+                "title": "Specialties",
+                "detail": "See details",
+                "param1": "Full of specialties, detailed doctor information, easy-to-understand instructions, patients easily choose the right doctor.",
+                "param2": "We effectively support patients during the pre-exam, during and after the visit.",
+                "booking": "Booking now",
+                "no_doctor": "There are currently no doctors in this area"
+            },
+            "location": {
+                "title": "Health facilities"
+            },
+            "doctor": {
+                "title": "Outstanding Doctor",
+                "detail-doctor": {
+                    "calendar": "Medical examination schedule",
+                    "no-time": "There is no time for medical examination today, please choose another date",
+                    "free": "Select and book (Schedule fee 0VND)",
+                    "info-cinic": "Clinic information",
+                    "City": "Province: ",
+                    "location": "Location: ",
+                    "see": "See details",
+                    "not_see": "Hide details",
+                    "price": "Price: ",
+                    "payment": "Payments: ",
+                    "note": "Doctor's Note: ",
+                    "free_title": "Free appointment booking",
+                    "datetime": "Schedule: "
+                },
+                "modal_booking": {
+                    "title": "Make an appointment to see a doctor",
+                    "info_title": "Clinic information",
+                    "name_clinic": "Clinic name:",
+                    "location_clinic": "Medical address: ",
+                    "price": "Examination price: ",
+                    "name": "Patient's name",
+                    "name-alert": "Please write your first and last name, capitalize the first letter",
+                    "gender": "Gender",
+                    "gender-alert": "You have to choose gender count",
+                    "phonenumber": "Phone number",
+                    "phonenumber-alert": "You must enter the phone number and the correct phone number model",
+                    "email": "Email",
+                    "email-alert": "You must enter the correct Email syntax and do not leave it blank",
+                    "location": "Address",
+                    "birthday": "Birth",
+                    "birthday-alert": "You must enter your date of birth",
+                    "location-alert": "You must enter the address",
+                    "booking_p": "Booking fee: ",
+                    "booking_num": "Free",
+                    "total_p": "Total",
+                    "reason": "Reasons for medical examination",
+                    "note_holder": "Please fill in the information completely to save time for examination procedures",
+                    "attentive": "Attentive",
+                    "attentive_p": "The information you provide will be used as medical examination records, when filling in your information, please:",
+                    "attentive_li1": "Specify your first and last name, capitalize the first letters, for example: Katty Perry",
+                    "attentive_li2": "Fill it out completely and correctly and please double check the information before pressing \"Register for an appointment\"",
+                    "submit": "Submit",
+                    "cancel": "Cancel",
+                    "Notify": "You have successfully registered for an appointment, please confirm via your email",
+                    "Notify_err": "Server error has occurred, please try again later"
+                }
+            },
+            "verify": {
+                "title": "Appointment confirmed successfully",
+                "title_false": "This appointment you have confirmed, please try again",
+                "param": "Thank you for booking an appointment from us",
+                "param_false": "Please reschedule your appointment",
+                "param_2": "Please come to the hospital according to your scheduled appointment time",
+                "param_3": "Thank you very much!"
+            },
+            "about": {
+                "title": "About us",
+                "about": "Media talk what about BookingCare",
+                "1": "BookingCare is an appointment booking platform that makes it easy for patients to choose the right doctor from a network of good specialists, with verified information and quick booking.",
+                "2": "1. BookingCare's team works directly with doctors to verify accurate, clear, up-to-date information about specialties, training - training, and work experience.",
+                "3": "2. Provide guidance content to help patients easily choose the right doctor for their problem for a highly effective examination.",
+                "4": "3. The system suggests a list of suitable doctors for patients to choose based on signs, symptoms or reasons for going to the doctor.",
+                "5": "4. The system will update the feedback of patients who have visited with each doctor so that the patient can have more reference information and choose the right doctor.",
+                "6": "We are researching, applying artificial intelligence / big data (AI / Big Data) step by step to connect patients to the right doctor for their condition."
+            }
+        },
+        "footer": {
+            "company": "BookingCare Technology Joint Stock Company",
+            "location": "Floor 6, D'Office Building, Group 28, Dich Vong Ward, Cau Giay District, Hanoi City",
+            "checker": "Business registration number: 1851171909. Hanoi Department of Planning and Investment issued on February 30, 2023",
+            "about": "Introduce",
+            "contact": "Contact",
+            "security": "Security",
+            "contract": "Terms of use",
+            "hanoi": "Headquarters in Hanoi",
+            "hcm": "Ho Chi Minh City Office",
+            "location_hcm": "No. 01, Ho Ba Kien street, Ward 15, District 10"
+        }
+    },
+    "login": {
+        "login": "Login",
+        "p1": "Welcome back, please ",
+        "p2": "To your account",
+        "username": "User name",
+        "username_err": "Please enter Email and enter the correct syntax",
+        "password": "Password",
+        "password_err": "Please enter password and password is longer than 6 characters",
+        "signup": "Sign up"
+    },
+    "signup": {
+        "success_title": "Account successfully created",
+        "success_body": "You have successfully registered an account, please login to continue using",
+        "title": "Register an account at Bookingcare"
+    },
+    "menu": {
+        "Admin_role": {
+            "manager-user": {
+                "title": "Accounts",
+                "doctor": "Doctor",
+                "admin": "Admin",
+                "user": "User",
+                "crud_user": "CRUD Redux"
+            },
+            "manager-clinic": {
+                "title": "Clinic",
+                "clinics": "Clinic management",
+                "image": "Clinic image",
+                "image_upload": "Upload",
+                "name": "Clinic name",
+                "province": "Province",
+                "location": "Location",
+                "detail": "Detail",
+                "edit_delete": "Edit or Delete",
+                "form": "Form information",
+                "add": "Add",
+                "save": "Save",
+                "cancel": "Cancel",
+                "delete": "Delete clinic successfully",
+                "save_success": "Save clinic successfully",
+                "save_error": "Save clinic have a error, please try again"
+            },
+            "manager-specialty": {
+                "title": "Specialty",
+                "specialtys": "Specialty management",
+                "image": "Specialty image",
+                "image_upload": "Upload",
+                "name": "Specialty name",
+                "detail": "Detail",
+                "edit_delete": "Edit or Delete",
+                "form": "Form information",
+                "add": "Add",
+                "save": "Save",
+                "cancel": "Cancel",
+                "delete": "Delete clinic successfully",
+                "save_success": "Save clinic successfully",
+                "save_error": "Save clinic have a error, please try again"
+            },
+            "manager-handbook": {
+                "title": "Handbook",
+                "handbooks": "Handbook management"
+            }
+        },
+        "Doctor_role": {
+            "manager-info": {
+                "title": "Information manage",
+                "edit_user": "Manage personal information",
+                "edit_info": "Manage details"
+            },
+            "manager-schedule": {
+                "title": "Medical examination management",
+                "schedule": "Book an appointment"
+            },
+            "manager-patient": {
+                "title": "Manage patient appointments",
+                "patient": "Appointment management",
+                "history": "Completed examination schedule"
+            }
+        },
+        "Patient_role": {
+            "manager-info": {
+                "title": "Information manage",
+                "edit_user": "Manage personal information"
+            },
+            "manager-booking": {
+                "title": "Manage medical appointments",
+                "booking": "Manage medical appointments"
+            }
+        }
+    },
+    "manager-user": {
+        "title": "Account Management",
+        "success": "Save user successfully",
+        "delete_title": "Delete user",
+        "delete_body": "Are you sure you want to delete this user?",
+        "delete_success": "Delete user successfully",
+        "delete_failed": "Delete user failed",
+        "add": "Add user",
+        "email": "Email",
+        "alert_email": "Must be correct Email syntax and do not leave blank",
+        "password": "Password",
+        "alert_password": "Password must be more than 6 characters and not blank",
+        "fullname": "Full name",
+        "phonenumber": "Phone number",
+        "alert_phonenumber": "Right phone format and can't be blank",
+        "address": "Address",
+        "gender": "Gender",
+        "roleId": "Role",
+        "positionId": "Position",
+        "image": "Avatar",
+        "alert": "Please fill in the blanks",
+        "save": "Save information",
+        "tooltip": "Please complete the request"
+    },
+    "manager-doctor": {
+        "header-title": "Create detailed information for Doctor",
+        "select-doctor": "Choose a doctor",
+        "description": "Description",
+        "introduce": "Introduction information",
+        "create": "Create information",
+        "save": "Save information",
+        "price": "Price of medical examination ($ Dollar)",
+        "payment": "Payment methods",
+        "province": "Province",
+        "specialty": "Choose Specialty",
+        "clinic": "Choose Clinic",
+        "name_clinic": "Clinic name",
+        "location": "Clinic address",
+        "note": "Note"
+    },
+    "manager-schedule": {
+        "title": "Manage the doctor's examination plan",
+        "select-doctor": "Choose a doctor",
+        "select-day": "Choose a day",
+        "select-time": "Choose a time",
+        "save": "Save schedule"
+    },
+    "Clinic": {
+        "Data": {
+            "title": "Health facilities",
+            "p1": "BookingCare is the leading comprehensive healthcare platform in Vietnam that connects users with more than 200 prestigious hospitals - clinics, more than 1,500 good specialists and thousands of medical services and products. High Quality."
+        },
+        "Detail": {
+            "tab1": "Introduce",
+            "tab2": "Team of doctors",
+            "guide1": "BookingCare is Vietnam's leading comprehensive healthcare platform that connects users with more than 200 prestigious hospitals - clinics, more than 1,500 good specialists and thousands of quality medical products and services. High.",
+            "guide2": "From now on, patients can make an appointment at the Clinic on demand, ",
+            "guide2_2": " through the BookingCare booking system.",
+            "li1": "Selected professors, doctors, specialists with experience",
+            "li2": " Support to book online before going to the doctor (free of charge)",
+            "li3": " Reduce waiting time during check-in procedures and prioritize first check-ups",
+            "li4": " Get detailed instructions after booking"
+        }
+    },
+    "Doctor": {
+        "Data": {
+            "title": "Why would a BookingCare Doctor solve your problem?",
+            "card1_title": "PRESTIGE DOCTOR",
+            "card1_p": "Network of good specialists who have/are working at leading major institutes, with verified information.",
+            "card2_title": "RIGHT PEOPLE RIGHT SICK",
+            "card2_p": "Full of specialties, detailed doctor information, easy-to-understand instructions, patients easily choose the right doctor.",
+            "card3_title": "CAREFULLY SUPPORT",
+            "card3_p": "We effectively support patients during the pre-exam, during and after the visit.",
+            "card4_title": "BOOK YOUR SCHEDULE 24/7",
+            "card4_p": "The doctor's appointment schedule is displayed 24/7 to help you proactively choose the right appointment schedule.",
+            "card5_title": "FREE SCHEDULE ONLY",
+            "card5_p": "Booking through BookingCare is free. Medical examination and treatment costs, you pay directly at the examination place.",
+            "card6_title": "FREE REVIEW",
+            "card6_p": "If the patient is not satisfied with the examination, consultation and treatment plan of the doctor."
+        },
+        "infoDoctor": {
+            "title": "DOCTOR'S DETAILS",
+            "save_success": "Save the information successfully",
+            "save_error": "Save information failed"
+        },
+        "ManagerHistoryBooking": {
+            "title": "History of appointments",
+            "all": "Show all",
+            "confirm_title": "Send confirmation of medical examination form",
+            "info_title": "Patient information",
+            "note": "Doctor's Note: ",
+            "image": "Prescription photo"
+        }
+    },
+    "form": {
+        "title": "Fill in the information",
+        "email": "Email",
+        "email_err": "Please enter Email and enter the correct syntax",
+        "password": "Password",
+        "password_err": "Please enter password and password is longer than 6 characters",
+        "fullname": "Full name",
+        "fullname_err": "Please enter your first and last name",
+        "address": "Address",
+        "address_err": "Please enter your address",
+        "phonenumber": "Phone number",
+        "phonenumber_err": "Please enter phone number and correct syntax",
+        "gender": "Gender",
+        "gender_err": "Please select your gender",
+        "position": "Position",
+        "position_err": "Please select Position",
+        "roleId": "Role",
+        "roleId_err": "Please select Role",
+        "signup": "Sign up",
+        "have_account": "Do you already have an account ? ",
+        "login": "Login",
+        "term_p": "Your continued use of this website constitutes your agreement to",
+        "term_button": "Terms of use",
+        "term_p2": "ours",
+        "action": "Actions"
+    },
+    "table": {
+        "date": "Day",
+        "time": "Time",
+        "name": "Full name",
+        "address": "Address",
+        "phonenumber": "Phone number",
+        "email": "Email",
+        "gender": "Gender",
+        "reason": "Reasons for medical examination",
+        "action": "Actions",
+        "confirm": "Confirm",
+        "status": "Status"
+    },
+    "LadingSystem": {
+        "title": "Welcome to back, ",
+        "p1": "This is your personal management page"
+    },
+    "seemore": "See more",
+    "close": "Close",
+    "Agree": "Agree",
+    "edit": "Edit",
+    "delete": "Delete",
+    "nores":"Sorry, the site is not available for tablets and mobile devices yet"
+}

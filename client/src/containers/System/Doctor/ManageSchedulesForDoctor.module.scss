@@ -1,0 +1,127 @@
+@import "../../../styles/common.scss";
+@import "../../../styles/variables";
+@import "../../../styles/base";
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.container {
+  @include container_system;
+  .header {
+    @include header_system;
+  }
+  .body {
+    .select_schedule_container {
+      @include flex-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      .left_holder {
+        width: 30%;
+        .select_day {
+          .select_day_title {
+            @include title_system;
+          }
+          .select_day_holder {
+            width: 100%;
+            position: relative;
+            background: transparent;
+          
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            .select_day_icon {
+              position: absolute;
+              top: 10px;
+              right: 5px;
+              border-left: 1px solid #ccc;
+              padding-left: 5px;
+              font-size: 24px;
+            }
+            .input_day {
+              width: 100%;
+              padding: 16.5px 14px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .right_holder {
+        width: 60%;
+        .select_time_title {
+          @include title_system();
+        }
+        .select_time_holder {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          .time_box {
+            flex: 1 1 20%;
+            .time_btn {
+              @include btn(
+                $color: #fff,
+                $bg: $menu_choose-bg,
+                $bg_hover: $menu_active-bg,
+                $color_hover: $color_sub,
+                $border: none,
+                $border_hover: none
+              );
+              width: 100%;
+              cursor: pointer;
+              -webkit-user-select: none;
+              user-select: none;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+              box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+          }
+        }
+      }
+      .submit {
+        width: 100%;
+        .submit_btn {
+          @include btn(
+            $color: #fff,
+            $bg: $menu_choose-bg,
+            $bg_hover: $menu_active-bg,
+            $color_hover: $color_sub,
+            $border: none,
+            $border_hover: none
+          );
+          cursor: pointer;
+          padding: 6px 12px;
+          -webkit-user-select: none;
+          user-select: none;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+    }
+  }
+}
+.active {
+  background: $menu_active-bg !important;
+  color: $color_sub !important;
+}
+.alert {
+  font-weight: 500;
+  padding: 15px 30px;
+  animation: scaleIn 0.5s;
+  border-radius: 20px;
+
+  > button {
+    padding: 0 !important;
+    top: 50% !important;
+    right: 10px !important;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+}

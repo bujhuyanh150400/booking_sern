@@ -1,0 +1,401 @@
+// ----- RESET CSS ----- //
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: $base-size;
+  font-family: $fontmain;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: $color_sub;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+// ----- END: RESET CSS ----- //
+
+// Module dùng để sử dụng lại
+// Section
+@mixin bodyPage {
+  padding-top: 86px;
+}
+@mixin PaddingHeader {
+  position: relative;
+  padding: 0 20px;
+}
+@mixin PaddingPage {
+  position: relative;
+  padding: 45px 64px;
+}
+@mixin bodyPageDetail {
+  padding: 66px 0 0 0;
+}
+@mixin PaddingPageDetail {
+  padding: 20px 183px 30px 183px;
+}
+// .system_container {
+//   width: 100%;
+//   height: 100%;
+//   padding-top: 50px;
+//   padding-left: 230px;
+// }
+@mixin header_system {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+@mixin container_system {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  margin-top: 66px;
+}
+@mixin title_system {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@mixin btn(
+  $bg: transparent,
+  $bg_hover: transparent,
+  $color: $color_sub,
+  $color_hover: $color_main,
+  $border: 1px solid $color_sub,
+  $border_hover: 1px solid $color_main,
+  $padding: 5px 15px
+) {
+  padding: $padding;
+  display: flex;
+  color: $color;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: $bg;
+  outline: none;
+  border: $border;
+  border-radius: 8px;
+  font-size: $base-size;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    background: $bg_hover;
+    color: $color_hover;
+    border: $border_hover;
+  }
+}
+@mixin titleBtn {
+  color: $color_sub;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $color_main;
+  }
+}
+@mixin btnHeader() {
+  @include flex-center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #94a3b8;
+  }
+}
+@mixin titleBody {
+  color: $color_sub;
+  font-size: $h1;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 12px;
+    background: $color_main;
+    bottom: -5px;
+    left: 0;
+  }
+}
+@mixin boxHolder {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+  @include boxShadow();
+}
+@mixin imgHolder {
+  vertical-align: middle;
+  height: 150px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+@mixin imgHover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+}
+@mixin btnBoxHolder {
+  @include btn($border: none, $border_hover: none, $bg: #fff, $bg_hover: #fff);
+  position: absolute;
+  padding: 6px 12px;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  z-index: 99;
+}
+@mixin btnBoxHover {
+  opacity: 1;
+  visibility: visible;
+}
+@mixin boxContent {
+  margin: 16px 0;
+  text-align: center;
+  > h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@mixin boxShadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+// Flex
+@mixin flex-start {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@mixin flex-start-column {
+  display: flex !important;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@mixin flex-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-between {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-end {
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+// Drop down menu
+@mixin dropdownMenu($left: 22px, $bottom: 47px) {
+  inset: 0px auto auto 0px !important;
+  transform: translate3d($left, $bottom, 0px) !important;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 2px 4px 20px #0003;
+  padding: 16px 0;
+  position: relative;
+  top: 0;
+  animation: fadeIn 0.3s;
+  z-index: 10;
+  > button {
+    line-height: 24px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 8px 20px;
+    transition: all 0.2s ease-out;
+    &:hover {
+      color: $color_main;
+    }
+    &:hover > a {
+      color: $color_main;
+    }
+    &:active {
+      background-color: #ccc;
+    }
+  }
+}

@@ -1,0 +1,255 @@
+@import "../../styles/variables";
+@import "../../styles/base";
+
+// Mỗi khu vực box holder
+
+// ----- BODY ------ //
+.body {
+  display: flex;
+  @include bodyPage;
+  .left {
+    width: 8%;
+  }
+  .right {
+    width: 92%;
+    // Banner
+    .banner {
+      padding-right: 46px;
+      .banner_container {
+        background-image: url("../../assets/images/banner/bookingcare-cover-4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include boxHolder;
+        @include boxShadow;
+        .banner_content {
+          width: 100%;
+          min-height: 340px;
+          @include flex-between();
+          padding: 0 64px;
+          background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(255, 255, 255, 0.1)
+          );
+          .banner_header {
+            @include flex-start-column();
+            .banner_title_first,
+            .banner_title_second {
+              font-size: 28px;
+              color: #fff;
+              text-transform: uppercase;
+              text-shadow: 1px 1px 1px #333;
+            }
+            .banner_title_second {
+              margin-top: 10px;
+              font-weight: 600;
+              font-size: 34px;
+            }
+            .btn_link_specialty {
+              margin-top: 20px;
+              @include btn(
+                $color: $color_sub,
+                $border: 1px solid #fff,
+                $bg: #fff,
+                $border_hover: 1px solid #fff,
+                $bg_hover: $color_main,
+                $color_hover: #fff
+              );
+            }
+          }
+          .banner_download {
+            .logo_banner {
+              border-radius: 12px;
+              -webkit-backdrop-filter: blur(3px);
+              -moz-backdrop-filter: blur(3px);
+              backdrop-filter: blur(3px);
+              height: 80px;
+            }
+            .banner_download_holder {
+              margin-top: 20px;
+              @include flex-center;
+              gap: 20px;
+              .google,
+              .apple {
+                width: 108px;
+                height: 32px;
+                border: 1px solid transparent;
+                outline: 1px solid transparent;
+                border-radius: 12px;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                  border: 1px solid $color_main;
+                  outline: 1px solid $color_main;
+                }
+              }
+              .google {
+                background: url("../../assets/images/logo/google-play-badge.svg")
+                  center center no-repeat;
+                background-size: cover;
+              }
+              .apple {
+                background: url("../../assets/images/logo/app-store-badge-black.svg")
+                  center center no-repeat;
+                background-size: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+    // Chuyên khoa
+    .specialist {
+      @include PaddingPage();
+      .specialist_title {
+        @include titleBody();
+      }
+      // Row
+      .specialist_container {
+        // Box chứa chuyên khoa
+        position: relative;
+        .specialist_content {
+          .specialist_box {
+            // Khu đựng ảnh
+            .specialist_img_holder {
+              @include boxHolder();
+              .specialist_btn {
+                @include btnBoxHolder();
+              }
+              .specialist_img {
+                @include imgHolder();
+              }
+              &:hover > .specialist_btn {
+                @include btnBoxHover();
+              }
+              &:hover > .specialist_img {
+                @include imgHover();
+              }
+            }
+            // Khu title
+            .specialist_content {
+              @include boxContent();
+            }
+          }
+        }
+      }
+    }
+    // Địa điểm
+    .location {
+      @include PaddingPage();
+      .location_title {
+        @include titleBody();
+      }
+      .location_container {
+        // Box địa điểm
+        position: relative;
+        .location_box {
+          // Khu đựng ảnh
+          .location_img_holder {
+            @include boxHolder();
+            .location_img {
+              @include imgHolder();
+              object-fit: contain;
+            }
+            .location_btn {
+              @include btnBoxHolder();
+            }
+            &:hover > .location_btn {
+              @include btnBoxHover();
+            }
+            &:hover > .location_img {
+              @include imgHover();
+            }
+          }
+          // Khu Title
+          .location_content {
+            @include boxContent();
+          }
+        }
+      }
+    }
+    // Bác sĩ nổi bật tuần qua
+    .featuredDoctor {
+      @include PaddingPage();
+      .featuredDoctor_title {
+        @include titleBody();
+      }
+      .featuredDoctor_container {
+        // slider con chứa bác sĩ tuần qua
+        position: relative;
+        .featuredDoctor_box {
+          padding: 15px 10px;
+          @include boxHolder();
+          @include flex-center;
+          flex-direction: column;
+          gap: 10px;
+          cursor: pointer;
+          .featuredDoctor_img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 2px solid #ccc;
+            transition: all 0.2s ease-in-out;
+          }
+          .featuredDoctor_detail {
+            text-align: center;
+            text-transform: capitalize;
+            line-height: 22px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            .doctor_name {
+              font-size: 14px;
+              font-weight: 600;
+              margin-bottom: 8px;
+            }
+          }
+          &:hover > .featuredDoctor_img {
+            border: 2px solid $color_main;
+          }
+          &:hover > .featuredDoctor_detail {
+            color: $color_main;
+          }
+        }
+      }
+    }
+    // Giới thiệu
+    .about {
+      @include PaddingPage();
+      .about_title {
+        @include titleBody();
+      }
+      .about_container {
+        @include flex-center();
+        gap: 20px;
+        min-height: 480px;
+        .about_video {
+          width: 50%;
+          height: 480px;
+          > iframe {
+            width: 100%;
+            border-radius: 16px;
+            height: 100%;
+          }
+        }
+        .about_content {
+          @include boxHolder();
+          width: 50%;
+          height: 100%;
+          padding: 20px;
+          > h1 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            line-height: 30px;
+            color: $color_main;
+          }
+          > p {
+            margin: 5px 0;
+            font-weight: 600;
+            line-height: 22px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

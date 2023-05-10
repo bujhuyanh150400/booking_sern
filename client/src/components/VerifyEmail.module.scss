@@ -1,0 +1,31 @@
+@import "../styles/common.scss";
+@import "../styles/variables";
+@import "../styles/base";
+
+.body {
+  @include bodyPage;
+  width: 100vw;
+  height: 500px;
+  @include flex-center;
+  .verify_body {
+    @include boxHolder;
+    width: 40%;
+    padding: 30px;
+    @include flex-center;
+    flex-direction: column;
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: red;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+    .param,.param_2 {
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+    .param_3{
+      line-height: 22px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import "../styles/common.scss";
+@import "../styles/variables";
+@import "../styles/base";
+
+@mixin chooseBtn {
+  @include flex-start;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: $menu_choose-bg;
+  padding: 10px;
+  gap: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+.navigator-menu {
+  @include flex-start-column;
+  .menu-group {
+    width: 100%;
+    @include flex-start-column;
+    .menu-group-name {
+      @include chooseBtn();
+      padding: 15px 10px;
+    }
+    .menu-list {
+      width: 100%;
+      @include flex-start-column;
+      animation: scrollDown 0.5s;
+      animation-direction: alternate;
+      .menu {
+        width: 100%;
+        .menu-link {
+          @include chooseBtn();
+          background-color: $menu_choose-bg-sub;
+          transition: all 0.2s ease-in-out;
+        }
+        .sub-menu-list {
+          margin-top: 10px;
+          width: 100%;
+          @include flex-start-column;
+          gap: 4px;
+          .sub-menu {
+            width: 100%;
+            .sub-menu-link {
+              @include chooseBtn();
+              padding: 5px;
+              background-color: $menu_choose-bg-sub-sub;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                background-color: $menu_active-bg;
+                color: $color_sub;
+              }
+            }
+            &.active {
+              .sub-menu-link {
+                color: $color_sub;
+                background-color: $menu_active-bg;
+              }
+            }
+          }
+        }
+        &.active,
+        &:hover {
+          .menu-link {
+            background-color: $menu_active-bg;
+            color: $color_sub;
+          }
+        }
+      }
+    }
+  }
+}

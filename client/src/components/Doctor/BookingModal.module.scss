@@ -1,0 +1,163 @@
+@import "../../styles/common.scss";
+@import "../../styles/variables";
+@import "../../styles/base";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  @include boxShadow;
+  padding: 20px;
+  @include flex-start;
+  animation: fadeIn 0.3s;
+  gap: 20px;
+  .left {
+    width: 40%;
+    @include flex-start-column;
+    gap: 20px;
+    .detail_holder {
+      width: 100%;
+      @include boxHolder;
+      @include flex-start-column;
+      gap: 10px;
+      padding: 20px 30px;
+      > h2 {
+        text-transform: uppercase;
+        color: $color_sub;
+        line-height: 22px;
+        font-weight: 600;
+      }
+      p {
+        font-weight: 600;
+        line-height: 22px;
+        > span {
+          font-weight: 400;
+        }
+      }
+    }
+    .note_holder {
+      @include flex-start-column;
+      width: 100%;
+      @include boxHolder;
+      background: $background_section;
+      gap: 10px;
+      padding: 20px 30px;
+      .note_holder_up {
+        width: 100%;
+        @include flex-between;
+        .payment_p,
+        .payment_price {
+          line-height: 22px;
+          font-weight: 500;
+        }
+        .payment_price {
+          text-align: right;
+        }
+      }
+      .row {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #ccc;
+      }
+      .note_holder_down {
+        width: 100%;
+        @include flex-between;
+        .total_p,
+        .total_price {
+          line-height: 22px;
+          font-weight: 500;
+        }
+        .total_price {
+          color: red;
+        }
+      }
+    }
+    .attentive_holder {
+      @include flex-start-column;
+      width: 100%;
+      @include boxHolder;
+      background: #d4effc;
+      gap: 10px;
+      padding: 20px 30px;
+      > h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      > p {
+        line-height: 22px;
+      }
+      > ul {
+        margin-left: 20px;
+        list-style: disc;
+        > li {
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .right {
+    width: 60%;
+    height: 100%;
+    @include flex-between;
+    flex-direction: column;
+    .form_holder {
+      @include boxHolder;
+      width: 100%;
+      padding: 20px 30px;
+      @include flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      .note {
+        width: 100%;
+        text-align: center;
+      }
+      .form_control {
+        width: 100%;
+      }
+      .form_note {
+        width: 100%;
+       
+      }
+    }
+    .submit_holder {
+      align-self: flex-end;
+      @include flex-center;
+      gap: 20px;
+      .submit {
+        @include btn(
+          $color: #fff,
+          $bg: $color_second,
+          $bg_hover: $color_main,
+          $color_hover: #fff,
+          $border: none,
+          $border_hover: none
+        );
+      }
+      .cancel {
+        @include btn(
+          $color: #fff,
+          $bg: #f87171,
+          $bg_hover: #f87171,
+          $color_hover: #fff,
+          $border: none,
+          $border_hover: none
+        );
+      }
+    }
+  }
+}

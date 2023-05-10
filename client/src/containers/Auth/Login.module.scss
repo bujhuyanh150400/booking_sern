@@ -1,0 +1,111 @@
+@import "../../styles/variables";
+@import "../../styles/common.scss";
+@import "../../styles/base";
+
+.background {
+  position: relative;
+  background-color:#dde3ec;
+  width: 100vw;
+  height: 100vh;
+  .body {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 500px;
+    background: #fff;
+    .content {
+      @include flex-center;
+      width: 100%;
+      height: 100%;
+      .left_body {
+        width: 50%;
+        height: 100%;
+        background: url("../../assets/images/banner/bg-login.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .right_body {
+        width: 50%;
+        height: 100%;
+        @include flex-start-column;
+        gap: 40px;
+        padding: 20px;
+        .header {
+          .title {
+            text-transform: uppercase;
+            font-size: $title;
+            font-weight: 700;
+            line-height: 30px;
+            color: $color_border;
+            > span {
+              font-size: $title;
+              color: $color_second;
+            }
+          }
+          .param {
+            color: #bbb;
+            font-weight: 500;
+            line-height: 22px;
+            > p > span {
+              color: $color_second;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .form_login {
+          @include flex-start-column;
+          gap: 20px;
+          width: 100%;
+          .form_control {
+            width: 100%;
+          }
+          .forgot_pass {
+            align-self: flex-end;
+            border: none;
+            background: transparent;
+            outline: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            &:hover {
+              color: $color_second;
+            }
+          }
+        }
+        .submit_holder {
+          @include flex-start;
+          align-items: center;
+          gap: 10px;
+          .submit {
+            @include btn(
+              $bg: $color_second,
+              $bg_hover: transparent,
+              $color: #fff,
+              $color_hover: $color_second,
+              $border: 1px solid $color_second,
+              $border_hover: 1px solid $color_second,
+              $padding: 10px 30px
+            );
+          }
+          .signup {
+            @include btn(
+              $bg: transparent,
+              $bg_hover: transparent,
+              $color: $color_second,
+              $color_hover: $color_second,
+              $border: 1px solid $color_second,
+              $border_hover: 1px solid $color_second,
+              $padding: 10px 20px
+            );
+          }
+        }
+      }
+    }
+  }
+}

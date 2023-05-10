@@ -1,0 +1,65 @@
+@import "../../styles/common.scss";
+@import "../../styles/variables";
+@import "../../styles/base";
+
+.doctor_info {
+  @include flex-start;
+  @include boxHolder;
+  gap: 20px;
+  padding: 10px 30px;
+  .doctor_img {
+    .doctor_img_holder {
+      width: 130px;
+      height: 130px;
+      border-radius: 100%;
+      border: 1px solid rgba(50, 50, 93, 0.25);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+  }
+  .doctor_name {
+    .name {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .renderTime,
+    .description {
+      margin-top: 10px;
+      line-height: 22px;
+    }
+    .location {
+      margin: 10px 0;
+      @include flex-start;
+      gap: 5px;
+      font-weight: 500;
+    }
+    .btn_detail {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-weight: 600;
+      color: $color_main;
+      margin: 10px 0;
+      transition: all 0.2s ease-in;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .renderTime {
+      .time {
+        line-height: 22px;
+        font-weight: 600;
+        > span {
+          font-weight: 400;
+        }
+      }
+      .free {
+        margin-top: 10px;
+        color: $color_main;
+      }
+    }
+  }
+}
